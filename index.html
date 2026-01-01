@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="ColorCraft - Free online color tools for designers. Extract color palettes from images, generate gradients, check color contrast for accessibility, and create beautiful color schemes.">
+    <meta name="keywords"
+        content="color palette, color extractor, gradient generator, color contrast checker, accessibility, WCAG, color scheme, design tools">
+    <meta name="author" content="ColorCraft">
+    <title>ColorCraft - Professional Color Tools for Designers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="14" fill="url(#gradient1)" />
+                        <path d="M16 8L20 16L16 24L12 16L16 8Z" fill="white" opacity="0.9" />
+                        <defs>
+                            <linearGradient id="gradient1" x1="2" y1="2" x2="30" y2="30">
+                                <stop offset="0%" stop-color="#667eea" />
+                                <stop offset="100%" stop-color="#764ba2" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="logo-text">ColorCraft</span>
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-links">
+                    <a href="#tools" class="nav-link">Tools</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#about" class="nav-link">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Professional Color Tools
+                    <span class="gradient-text">for Designers</span>
+                </h1>
+                <p class="hero-subtitle">Extract palettes from images, generate stunning gradients, check accessibility,
+                    and create perfect color schemes - all free, all in your browser.</p>
+                <div class="hero-cta">
+                    <a href="#tools" class="btn btn-primary">Explore Tools</a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="color-circle circle-1"></div>
+                <div class="color-circle circle-2"></div>
+                <div class="color-circle circle-3"></div>
+                <div class="color-circle circle-4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Header Ad - Responsive Banner -->
+    <div class="ad-container ad-header">
+        <span class="ad-label">Advertisement</span>
+        <div class="ad-unit">
+            <!-- Google AdSense - Header Banner -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                data-ad-slot="HEADER_AD_SLOT_ID" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools-section">
+        <div class="container">
+            <h2 class="section-title">Powerful Color Tools</h2>
+            <p class="section-subtitle">Everything you need to work with colors professionally</p>
+
+            <div class="tools-grid">
+                <!-- Image Palette Extractor -->
+                <div class="tool-card" id="palette-extractor-card">
+                    <div class="tool-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="url(#grad-palette)" />
+                            <path d="M14 18h20M14 24h20M14 30h12" stroke="white" stroke-width="2.5"
+                                stroke-linecap="round" />
+                            <defs>
+                                <linearGradient id="grad-palette" x1="0" y1="0" x2="48" y2="48">
+                                    <stop offset="0%" stop-color="#f093fb" />
+                                    <stop offset="100%" stop-color="#f5576c" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="tool-title">Palette Extractor</h3>
+                    <p class="tool-description">Upload any image and extract dominant colors instantly. Perfect for
+                        brand analysis and inspiration.</p>
+                    <button class="tool-btn" onclick="openTool('palette')">Launch Tool</button>
+                </div>
+
+                <!-- Gradient Generator -->
+                <div class="tool-card" id="gradient-generator-card">
+                    <div class="tool-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="url(#grad-gradient)" />
+                            <circle cx="18" cy="24" r="6" fill="white" opacity="0.9" />
+                            <circle cx="30" cy="24" r="6" fill="white" opacity="0.5" />
+                            <defs>
+                                <linearGradient id="grad-gradient" x1="0" y1="24" x2="48" y2="24">
+                                    <stop offset="0%" stop-color="#4facfe" />
+                                    <stop offset="100%" stop-color="#00f2fe" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="tool-title">Gradient Generator</h3>
+                    <p class="tool-description">Create beautiful CSS gradients with live preview. Multiple gradient
+                        types and easy export.</p>
+                    <button class="tool-btn" onclick="openTool('gradient')">Launch Tool</button>
+                </div>
+
+                <!-- Contrast Checker -->
+                <div class="tool-card" id="contrast-checker-card">
+                    <div class="tool-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="url(#grad-contrast)" />
+                            <path d="M24 12v24M12 24h24" stroke="white" stroke-width="3" stroke-linecap="round" />
+                            <circle cx="24" cy="24" r="8" stroke="white" stroke-width="2.5" fill="none" />
+                            <defs>
+                                <linearGradient id="grad-contrast" x1="0" y1="0" x2="48" y2="48">
+                                    <stop offset="0%" stop-color="#43e97b" />
+                                    <stop offset="100%" stop-color="#38f9d7" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="tool-title">Contrast Checker</h3>
+                    <p class="tool-description">Ensure WCAG accessibility compliance. Check color contrast ratios for
+                        text and backgrounds.</p>
+                    <button class="tool-btn" onclick="openTool('contrast')">Launch Tool</button>
+                </div>
+
+                <!-- Color Scheme Generator -->
+                <div class="tool-card" id="scheme-generator-card">
+                    <div class="tool-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <rect width="48" height="48" rx="12" fill="url(#grad-scheme)" />
+                            <circle cx="24" cy="24" r="10" stroke="white" stroke-width="2.5" fill="none" />
+                            <circle cx="24" cy="14" r="2.5" fill="white" />
+                            <circle cx="24" cy="34" r="2.5" fill="white" />
+                            <circle cx="14" cy="24" r="2.5" fill="white" />
+                            <circle cx="34" cy="24" r="2.5" fill="white" />
+                            <defs>
+                                <linearGradient id="grad-scheme" x1="0" y1="0" x2="48" y2="48">
+                                    <stop offset="0%" stop-color="#fa709a" />
+                                    <stop offset="100%" stop-color="#fee140" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3 class="tool-title">Scheme Generator</h3>
+                    <p class="tool-description">Generate harmonious color schemes using color theory. Complementary,
+                        triadic, and more.</p>
+                    <button class="tool-btn" onclick="openTool('scheme')">Launch Tool</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tool Modals -->
+    <div id="tool-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeTool()">&times;</button>
+            <div id="tool-container"></div>
+        </div>
+    </div>
+
+    <!-- Content Ad - In-Article Format -->
+    <div class="ad-container ad-content">
+        <span class="ad-label">Advertisement</span>
+        <div class="ad-unit">
+            <!-- Google AdSense - In-Content Ad -->
+            <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article"
+                data-ad-format="fluid" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="CONTENT_AD_SLOT_ID"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose ColorCraft?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Lightning Fast</h3>
+                    <p>100% client-side processing. No uploads, no waiting, complete privacy.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Professional Quality</h3>
+                    <p>Industry-standard color extraction and generation algorithms.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">♿</div>
+                    <h3>Accessibility First</h3>
+                    <p>WCAG 2.1 compliant contrast checking for inclusive design.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💯</div>
+                    <h3>100% Free</h3>
+                    <p>All tools completely free to use. No registration required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About ColorCraft</h2>
+            <p class="about-text">ColorCraft is a comprehensive suite of professional color tools designed for
+                designers, developers, and creative professionals. Our mission is to make color work easier, faster, and
+                more accessible for everyone. All our tools run entirely in your browser, ensuring your privacy and
+                providing instant results.</p>
+        </div>
+    </section>
+
+    <!-- Footer Ad - Responsive Banner -->
+    <div class="ad-container ad-footer">
+        <span class="ad-label">Advertisement</span>
+        <div class="ad-unit">
+            <!-- Google AdSense - Footer Banner -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                data-ad-slot="FOOTER_AD_SLOT_ID" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="14" fill="url(#gradient2)" />
+                            <path d="M16 8L20 16L16 24L12 16L16 8Z" fill="white" opacity="0.9" />
+                            <defs>
+                                <linearGradient id="gradient2" x1="2" y1="2" x2="30" y2="30">
+                                    <stop offset="0%" stop-color="#667eea" />
+                                    <stop offset="100%" stop-color="#764ba2" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="logo-text">ColorCraft</span>
+                    </div>
+                    <p class="footer-tagline">Professional color tools for designers</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#tools">Tools</a>
+                    <a href="#features">Features</a>
+                    <a href="#about">About</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ColorCraft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
