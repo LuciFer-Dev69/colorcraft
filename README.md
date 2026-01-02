@@ -3,7 +3,7 @@
 **ColorCraft** is a professional, client-side color tools suite designed for UI/UX designers, developers, and digital artists. It runs entirely in the browser, ensuring maximum privacy and lightning-fast performance.
 
 ## 🚀 Live Demo
-[View ColorCraft on GitHub Pages](https://LuciFer-Dev69.github.io/colorcraft/)
+[View ColorCraft on GitHub Pages](https://lucifer-dev69.github.io/colorcraft/)
 
 ## ✨ Key Features
 
